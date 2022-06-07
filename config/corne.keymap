@@ -20,7 +20,7 @@
 // | ESC   |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | EQUAL |
 // | LSHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  RSHFT   |
 // | LWR   |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | LWR  |
-//                     | ALT | GUI | SPC |   | ENT | BSPC  | MINUS |
+//                     | ALT | GUI | SPACE |   | ENT | BSPC  | MINUS |
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp SQT
    &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMICOLON &kp RSHFT
@@ -33,12 +33,12 @@
 // | CAPS  |  !    |  @  |  #   |  $   |  %  |        |  ^  |  &  |  *   |  (  |  )   |   =   |
 // | trans | trans |  F  | BSPC | LBKT | RBKT|        | LBRC| RBRC|  UP | trans| trans| trans |
 // | mo2   | trans |  H  | LCTRL| TAB  |GRAVE|        |trans| LEFT| DOWN| RIGHT| trans| trans |
-//                    | ALT |  GUI   | ENT |          | SPC | mo2 | PLUS|
+//                    | ALT |  GUI   | ENT |          | SPACE | mo2 | PLUS|
                         bindings = <
    &kp CAPS   &kp EXCL   &kp AT   &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET   &kp AMPS   &kp KP_MULTIPLY   &kp LPAR  &kp RPAR   &kp EQUAL
    &trans     &trans     &kp F    &kp BSPC  &kp LBKT  &kp RBKT       &kp LBRC    &kp RBRC   &kp UP            &trans    &trans     &trans
    &mo 2      &trans     &kp H    &kp LCTRL &kp TAB   &kp GRAVE      &trans      &kp LEFT   &kp DOWN          &kp RIGHT &trans     &trans
-                          	        &kp ALT     &kp GUI    &kp RET      &kp SPC    &mo 2 &kp PLUS
+                          	        &kp ALT     &kp GUI    &kp RET      &kp SPACE    &mo 2 &kp PLUS
                         >;
                 };
 
