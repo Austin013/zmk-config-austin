@@ -11,7 +11,6 @@
 #define Arrows   1
 #define Numbers  2
 #define Devices  3
-#define Colemak  4
 /{
 
         keymap {
@@ -19,10 +18,11 @@
 
                 Work {
                         bindings = <
-   &kp ESC      &kp Q  &kp W   &kp E   &kp R   &kp T           &kp Y &kp U  &kp I     &kp O     &kp P    &kp PIPE
-   &kp LSHIFT   &kp A  &kp S   &kp D   &kp F   &kp G           &kp H &kp J  &kp K     &kp L     &kp SEMI &mt RSHFT SQT
-   &mo 1        &kp Z  &lt 3 X &kp C   &kp V   &kp B           &kp N &kp M  &kp COMMA &lt 3 DOT &kp FSLH &mo 1
+   &kp ESC     &kp Q     &kp W     &kp F        &kp P        &kp B          &kp J     &kp L     &kp U     &kp Y     &kp SEMI  &none
+   &kp LSHIFT  &kp A     &kp R     &kp S        &kp T        &kp G          &kp M     &kp N     &kp E     &kp I     &kp O     &mt RSHFT SQT
+   &mo 1       &kp Z     &kp X     &kp C        &kp D        &kp V          &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH  &mo 1
                           &kp LALT &kp LGUI &lt 2 SPACE          &kp RET &lt 2 BSPC &kp MINUS
+                         
                         >;
                 };
                 Arrows {
@@ -46,18 +46,9 @@
 		Devices {
 			bindings = <
    &none     &kp N0     &kp N5     &kp N0         &kp N1          &none          &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4   &none
-   &none     &trans     &kp LALT   &kp LGUI       &kp C_PWR       &none          &kp K_PWR         &to 4            &none           &none           &none          &none
+   &none     &trans     &kp LALT   &kp LGUI       &kp C_PWR       &none          &kp K_PWR         &none            &none           &none           &none          &none
    &mo 2     &trans     &trans     &kp LG(LS(N4)) &kp LG(LS(N5))  &none          &none             &kp C_BRI_UP     &kp C_BRI_DN    &trans          &none          &none
                         &kp C_VOL_DN     &kp C_VOL_UP      &kp C_MUTE            &kp C_PP          &kp C_PREV       &kp C_NEXT
-			>;
-		};
-
-                Colemak {
-			bindings = <
-   &kp ESC     &kp Q     &kp W     &kp F        &kp P        &kp B          &kp J     &kp L     &kp U     &kp Y     &kp SEMI  &none
-   &kp LSHIFT  &kp A     &kp R     &kp S        &kp T        &kp G          &kp M     &kp N     &kp E     &kp I     &kp O     &kp RSHFT
-   &to 0       &kp Z     &kp X     &kp C        &kp D        &kp V          &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH  &to 0
-                                   &kp LALT     &kp LGUI     &kp SPACE      &kp RET   &kp BSPC  &kp MINUS
 			>;
 		};
         };
