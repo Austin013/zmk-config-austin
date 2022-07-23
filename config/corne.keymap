@@ -16,11 +16,6 @@ mt {
         tapping_terms_ms = <150>;
 };
 
-lt {
-        flavor = "tap-preferred";
-        tapping_terms_ms = <150>;
-};
-
 /{
         combos {
         compatible = "zmk,combos";
