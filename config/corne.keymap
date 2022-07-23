@@ -13,7 +13,7 @@
 #define Numbers  2
 #define Devices  3
 
-&mt {
+&lt {
     flavor = "tap-preferred";
     tapping_term_ms = <200>;
 };
@@ -62,12 +62,13 @@ behaviors {
             bindings = <&kp>, <&kp>;
         };
 };
+
         keymap {
                 compatible = "zmk,keymap";
 
                 Work {
                         bindings = <
-   &none       &kp Q           &kp W        &kp F           &kp P           &kp B                   &kp J        &kp L         &td LBRC U     &td RBRC Y    &td SQT DQT     &none
+   &none       &kp Q           &kp W        &kp F           &kp P           &kp B                   &kp J        &kp L         &td LBRC U     &td RBRC Y    &td DQT SQT     &none
    &none       &hm LCTRL A     &hm LALT R   &hm LSHFT S     &hm LGUI T      &kp G                   &kp M        &hm RGUI N    &hm RSHFT E    &hm RALT I    &kp O           &none
    &none       &lt 1 Z         &kp X        &kp C           &kp D           &kp V                   &kp K        &kp H         &kp COMMA      &kp DOT       &lt 1 FSLH      &none
                                             &none           &mt LGUI UNDER  &lt 2 SPACE             &lt 2 RET    &kp BSPC      &none
@@ -96,7 +97,7 @@ behaviors {
 			bindings = <
    &none     &kp N0    &kp N5           &kp N0         &kp N1          &none                  &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4   &none
    &none     &none     &kp LALT         &kp LGUI       &kp C_PWR       &none                  &none             &none            &none           &none           &none          &none
-   &none     &none     &kp C_BRI_DN     &kp C_BRI_UP   &kp C_VOL_DN    &kp C_VOL_UP           &kp C_PREV        &kp C_NEXT       &kp C_BRI_DN    &trans          &none          &none
+   &none     &none     &kp C_BRI_DN     &kp C_BRI_UP   &kp C_VOL_DN    &kp C_VOL_UP           &kp C_PREV        &kp C_NEXT       &none           &trans          &none          &none
                                         &none          &to 0           &kp C_MUTE             &kp C_PP          &to 0            &none
 			>;
 		};
