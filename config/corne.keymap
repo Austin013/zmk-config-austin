@@ -73,10 +73,10 @@ behaviors {
                 };
                 Arrows {
                         bindings = <
-   &none      &kp EXCL          &kp AT        &kp HASH        &kp DLLR  &kp PRCNT        &kp CARET  &kp AMPS  &kp STAR    &kp LPAR    &kp RPAR   &none
-   &none      &kp LSHFT         &kp LALT      &kp BSPC        &kp LBKT  &kp RBKT         &kp MINUS  &kp PLUS  &kp DEL     &kp BSLH    &kp PIPE   &none
-   &none      &trans            &kp LG(LC(F)) &kp LG(LS(N4))  &kp TAB   &kp GRAVE        &kp LEFT   &kp UP    &kp DOWN    &kp RIGHT   &trans     &none
-                                              &none           &trans    &kp RET          &kp SPACE  &kp RALT &none
+   &none      &kp EXCL          &kp AT        &kp HASH        &kp DLLR  &kp PRCNT         &kp CARET  &kp AMPS  &kp STAR    &kp LPAR    &kp RPAR   &none
+   &none      &kp LSHFT         &kp LALT      &kp BSPC        &kp LBKT  &kp RBKT          &kp MINUS  &kp PLUS  &kp DEL     &kp BSLH    &kp PIPE   &none
+   &none      &trans            &kp LG(LC(F)) &kp LG(LS(N4))  &kp TAB   &td TILDE GRAVE   &kp LEFT   &kp UP    &kp DOWN    &kp RIGHT   &trans     &none
+                                              &none           &trans    &kp RET           &kp SPACE  &kp RALT &none
                         >;
                 };
 
