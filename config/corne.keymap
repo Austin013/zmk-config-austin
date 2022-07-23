@@ -21,7 +21,8 @@ lt {
         tapping_terms_ms = <150>;
 };
 
-combos {
+/{
+        combos {
         compatible = "zmk,combos";
         combo_COLON {
             timeout-ms = <50>;
@@ -44,7 +45,6 @@ combos {
             bindings = <&kp CAPS>;
         };
 };
-/{
 behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
